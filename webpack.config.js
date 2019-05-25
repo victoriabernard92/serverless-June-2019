@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
     index: './src/index.js',
   },
@@ -15,10 +15,10 @@ module.exports = {
     stats: {
       all: undefined,
 
-      assets: false,
-      modules: false,
-      warnings: false,
-      moduleTrace: false,
+      assets: true,
+      modules: true,
+      warnings: true,
+      moduleTrace: true,
       errors: true,
       errorDetails: true,
     },
@@ -32,6 +32,18 @@ module.exports = {
       {
         from: './src/images/',
         to: 'images/',
+      },
+    ]),
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: './node_modules/reveal.js/plugin/',
+    //     to: 'plugin/',
+    //   },
+    // ]),
+    new CopyWebpackPlugin([
+      {
+        from: './node_modules/reveal.js/',
+        to: 'reveal.js/',
       },
     ]),
   ],
