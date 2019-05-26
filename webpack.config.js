@@ -15,10 +15,10 @@ module.exports = {
     stats: {
       all: undefined,
 
-      assets: true,
-      modules: true,
+      assets: false,
+      modules: false,
       warnings: true,
-      moduleTrace: true,
+      moduleTrace: false,
       errors: true,
       errorDetails: true,
     },
@@ -34,12 +34,12 @@ module.exports = {
         to: 'images/',
       },
     ]),
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: './node_modules/reveal.js/plugin/',
-    //     to: 'plugin/',
-    //   },
-    // ]),
+    new CopyWebpackPlugin([
+      {
+        from: './node_modules/reveal.js/plugin/',
+        to: 'plugin/',
+      },
+    ]),
     new CopyWebpackPlugin([
       {
         from: './node_modules/reveal.js/',
@@ -48,11 +48,6 @@ module.exports = {
     ]),
   ],
   module: {
-    // loaders: [
-    //   {
-    //     test: /\.css$/,
-    //     loader: "style!css"
-    //   },],
     rules: [
       {
         test: /\.css$/,

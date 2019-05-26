@@ -5,15 +5,80 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="src/code-blocks.css">
-		<title>reveal.js</title>
+		<title>Javascript Service Workers</title>
+		<meta name="description" content="Dev life using Serverless a talk for Serverlessday Milano">
+		<meta name="author" content="Vicrtoria Bernard">
 
 	</head>
 
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Dev life using Serverless</h1>
+					<h3>Victoria Bernard</h3>
+					<h3>June 21, 2019</h3>
+				</section>
+				<section data-background="images/tools.jpg" style="text-align: right; justify-items: end">
+					<div style="background-color:rgba(255, 255, 255, 0.6); padding: 20px; display: inline-block">
+						<h1>Tools</h1>
+					</div>
+				</section>
+				<section style="text-align: left;">
+					<h1>
+						Useful
+					</h1>
+					use,ful <b> adj.</b>
+					<p> able to be used for a practical purpose or in several ways.</p>
+
+				</section>
+				<section>
+					<p> able to be used for a practical purpose <b><span style="text-decoration: line-through">or
+							</span>
+							and </b>in
+						several ways.</p>
+				</section>
+				<section>
+					<h1>h1</h1>
+					<h2>h2</h2>
+					<h3>h3</h3>
+					<h4>h4</h4>
+					<h5>h5</h5>
+				</section>
+				<section>
+					<h2>Code</h2>
+					<div class="fragment fade-up code-row">
+						<div class="left-block">
+							<p style="text-align: right;">
+								In the window's JS one must register the service worker
+							</p>
+						</div>
+						<div class="right-block">
+							<pre>
+				                  <code class="javascript" data-trim contenteditable style="font-size: 1em;" >
+navigator.serviceWorker.register('sw.js', 
+ { scope: '/path-to-control' })
+				                  </code>
+				                </pre>
+						</div>
+					</div>
+					<div class="fragment fade-up code-row">
+						<div class="left-block">
+							<p style="text-align: right;">
+								One example eventListener
+							</p>
+						</div>
+						<div class="right-block">
+							<pre>
+				                  <code class="javascript" data-trim contenteditable style="font-size: 1em;" >
+self.addEventListener('install', function (event) { 
+ event.waitUntil(preSWWork()) 
+				                    })
+				                  </code>
+				                </pre>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
