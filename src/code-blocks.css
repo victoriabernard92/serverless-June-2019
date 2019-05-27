@@ -1,6 +1,32 @@
 /*********************************************
  * Custom
  *********************************************/
+:root {
+  text-emphasis-color: #fa6756;
+  --emphasis-color: #fa6756;
+  --trans-background-color: #ffffff99;
+}
+.emphasize {
+  /* color: #d33682; */
+  /* color: #d26de3; */
+  color: var(--emphasis-color);
+  font-weight: 900;
+  /* color:https://www.colourlovers.com/color/DB593F/ */
+}
+.less-emphasis {
+  color: #268bd2;
+}
+.more-subtle {
+  color: #268bd2;
+  /* lighten(#268bd2, 20%); */
+}
+.subtle {
+  color: #2aa198;
+}
+.test {
+  color: #586e75;
+}
+
 .cite {
   color: grey;
   font-style: italic;

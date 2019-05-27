@@ -9,10 +9,10 @@ Reveal.initialize({
   progress: true,
   history: true,
   center: true,
+  autoPlayMedia: true,
 
   transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-  // More info https://github.com/hakimel/reveal.js#dependencies
   dependencies: [
     {
       src: 'plugin/markdown/marked.js',
@@ -40,12 +40,3 @@ Reveal.initialize({
 })
 
 window.Reveal = Reveal
-// console.log('foo')
-Reveal.addEventListener('fragmentshown', function(event) {
-  // event.fragment = the fragment DOM element
-  // console.log(event.fragment)
-})
-Reveal.addEventListener('fragmenthidden', function(event) {
-  // event.fragment = the fragment DOM element
-  // console.log(event.fragment)
-})
