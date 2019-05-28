@@ -1,17 +1,34 @@
 /*********************************************
- * Custom
+ * Colors
  *********************************************/
 :root {
   text-emphasis-color: #fa6756;
   --emphasis-color: #fa6756;
   --trans-background-color: #ffffff99;
+  --dark-color: #103c3f;
+  --dark-lighten-color: #103c3f5d;
+  --light-orig-color: #fdf6e3;
+  /* http://www.colourlovers.com/patterns/add?colors=103C3F,6C547E,AF9BB2,A3D1C2,F7E0A6&pID=4648709 */
+  /* --dark-lighten-color: #207980; */
+  /* --dark2-color: #6c547e;
+  --light2-color: #af9bb2;
+  --bright-color: #a3d1c2;
+  --light1-color: #f7e0a6; */
 }
+/*********************************************
+ * Text
+ *********************************************/
 .emphasize {
   /* color: #d33682; */
   /* color: #d26de3; */
   color: var(--emphasis-color);
   font-weight: 900;
   /* color:https://www.colourlovers.com/color/DB593F/ */
+}
+.reveal .fade-dark,
+.reveal .fade-dark h1,
+.reveal .fade-dark p {
+  color: var(--dark-lighten-color);
 }
 .less-emphasis {
   color: #268bd2;
@@ -23,15 +40,25 @@
 .subtle {
   color: #2aa198;
 }
-.test {
-  color: #586e75;
-}
 
 .cite {
   color: grey;
   font-style: italic;
   font-size: .5rem;
 }
+/*********************************************
+ * Slides
+ *********************************************/
+.reveal .section-header h1,
+.reveal .section-header h2,
+.reveal .section-header h3,
+.reveal .section-header p {
+  background-color: var(--emphasis-color);
+  color: var(--light-orig-color);
+}
+/*********************************************
+ * Code
+ *********************************************/
 code.inline {
   display: inline;
 }
