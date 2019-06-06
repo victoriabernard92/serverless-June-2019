@@ -1,230 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/code.css" />
+    <title>Serverless Usecases</title>
+    <meta name="description" content="Dev life using Serverless a talk for Serverlessday Milano" />
+    <meta name="author" content="Vicrtoria Bernard" />
+    <link rel="icon" type="image/png" href="images/Victoria_logo_gear.png" />
+  </head>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="src/code-blocks.css">
-		<title>Serverless Usecases</title>
-		<meta name="description" content="Dev life using Serverless a talk for Serverlessday Milano">
-		<meta name="author" content="Vicrtoria Bernard">
-		<link rel="icon" type="image/png" href="images/Victoria_logo_gear.png">
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </section>
+        <section data-background-color="#fa6756" class="section-header">
+          <h1>Dev life using Serverless</h1>
+          <h3>Victoria Bernard</h3>
+          <h3>June 21, 2019</h3>
+        </section>
+        <section>
+          <img src="images/twins.gif" sizes="500px" />
+          <div>
+            <h1 class="emphasize">Love</h1>
+          </div>
+        </section>
+        <section data-background="images/tools.jpg" style="text-align: right; justify-items: end">
+          <div
+            style="background-color:rgba(255, 255, 255, 0.6); padding: 20px; display: inline-block"
+          >
+            <h1>Tools</h1>
+          </div>
+        </section>
+        <section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>able to be used for a practical purpose or in several ways.</p>
+          </section>
 
-	</head>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+            class="fade-dark"
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>
+              able to be used for a practical purpose<span class="emphasize">
+                <span style="text-decoration: line-through"> or </span>
+                and </span
+              >in several ways.
+            </p>
+          </section>
+        </section>
+        <section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>able to be used for a practical purpose and in several ways.</p>
+          </section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+            class="fade-dark"
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>
+              able to be used for a <span class="emphasize">practical </span>purpose and in several
+              ways.
+            </p>
+          </section>
+          <section>
+            <h1>Practical</h1>
+            <ul>
+              <li>Fast</li>
+              <li>$$$</li>
+              <li>Get 'er done</li>
+              <li>something else whoops</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Boss Happy</h1>
+            <img src="images/boss.gif" />
+          </section>
+          <section class="fade-dark">
+            <h1>Practical</h1>
+            <ul>
+              <li><span class="emphasize">Fast</span></li>
+              <li>$$$</li>
+              <li>Get 'er done</li>
+              <li>something else whoops</li>
+            </ul>
+          </section>
+          <section>
+            <h1>
+              Cold Starts
+            </h1>
+            <video autoplay="true" loop="true">
+              <source src="images/coolstartsslowshits.mp4" type="video/mp4" />
+            </video>
+          </section>
+          <section class="fade-dark">
+            <h1>Practical</h1>
+            <ul>
+              <li>Fast</li>
+              <li><span class="emphasize">$$$</span></li>
+              <li>Get 'er done</li>
+              <li>something else whoops</li>
+            </ul>
+          </section>
+          <section>
+            <h1>
+              Money
+            </h1>
+          </section>
+          <section class="fade-dark">
+            <h1>Practical</h1>
+            <ul>
+              <li>Fast</li>
+              <li>$$$</li>
+              <li>Get 'er done</li>
+              <li><span class="emphasize">something else whoops</span></li>
+            </ul>
+          </section>
+          <section>
+            <h1>
+              Intended Tasks
+            </h1>
+          </section>
+          <section>
+            <h1>Practical</h1>
+            <ul>
+              <li>Fast</li>
+              <li>$$$</li>
+              <li>Get 'er done</li>
+              <li>something else whoops</li>
+            </ul>
+          </section>
+        </section>
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-color="#fa6756" class="section-header">
-					<h1>Dev life using Serverless</h1>
-					<h3>Victoria Bernard</h3>
-					<h3>June 21, 2019</h3>
-				</section>
-				<section>
-					<img src="images/twins.gif" sizes="500px" />
-					<div>
-						<h1 class="emphasize">Love</h1>
-					</div>
-				</section>
-				<section data-background="images/tools.jpg" style="text-align: right; justify-items: end">
-					<div style="background-color:rgba(255, 255, 255, 0.6); padding: 20px; display: inline-block">
-						<h1>Tools</h1>
-					</div>
-				</section>
-				<section>
-					<section data-transition="slide" data-background-transition="zoom"
-						style="text-align: left;transition:none ">
-						<h1>
-							Useful
-						</h1>
-						use,ful <b> adj.</b>
-						<p> able to be used for a practical purpose
-							or in
-							several ways.</p>
-					</section>
+        <section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>able to be used for a practical purpose and in several ways.</p>
+          </section>
 
-					<section data-transition="slide" data-background-transition="zoom"
-						style="text-align: left;transition:none " class="fade-dark">
-						<h1>
-							Useful
-						</h1>
-						use,ful <b> adj.</b>
-						<p> able to be used for a practical purpose<span class="emphasize">
-								<span style="text-decoration: line-through"> or
-								</span>
-								and </span>in
-							several ways.</p>
-					</section>
-
-				</section>
-				<section>
-					<section data-transition="slide" data-background-transition="zoom"
-						style="text-align: left;transition:none ">
-						<h1>
-							Useful
-						</h1>
-						use,ful <b> adj.</b>
-						<p> able to be used for a practical purpose
-							and in
-							several ways.</p>
-					</section>
-					<section data-transition="slide" data-background-transition="zoom"
-						style="text-align: left;transition:none " class="fade-dark">
-						<h1>
-							Useful
-						</h1>
-						use,ful <b> adj.</b>
-						<p> able to be used for a <span class="emphasize">practical </span>purpose
-							and in
-							several ways.</p>
-					</section>
-					<section>
-						<h1>Practical</h1>
-						<ul>
-							<li>Fast</li>
-							<li>$$$</li>
-							<li>Get 'er done</li>
-							<li>something else whoops</li>
-						</ul>
-					</section>
-					<section>
-						<h1>Boss Happy</h1>
-						<img src="images/boss.gif" />
-
-					</section>
-					<section class="fade-dark">
-						<h1>Practical</h1>
-						<ul>
-							<li><span class="emphasize">Fast</span></li>
-							<li>$$$</li>
-							<li>Get 'er done</li>
-							<li>something else whoops</li>
-						</ul>
-					</section>
-					<section>
-						<h1>
-							Cold Starts
-						</h1>
-						<video autoplay="true" loop="true">
-							<source src="images/coolstartsslowshits.mp4" type="video/mp4">
-						</video>
-					</section>
-					<section class="fade-dark">
-						<h1>Practical</h1>
-						<ul>
-							<li>Fast</li>
-							<li><span class="emphasize">$$$</span></li>
-							<li>Get 'er done</li>
-							<li>something else whoops</li>
-						</ul>
-					</section>
-					<section>
-						<h1>
-							Money
-						</h1>
-					</section>
-					<section class="fade-dark">
-						<h1>Practical</h1>
-						<ul>
-							<li>Fast</li>
-							<li>$$$</li>
-							<li>Get 'er done</li>
-							<li><span class="emphasize">something else whoops</span></li>
-						</ul>
-					</section>
-					<section>
-						<h1>
-							Intended Tasks
-						</h1>
-					</section>
-					<section>
-						<h1>Practical</h1>
-						<ul>
-							<li>Fast</li>
-							<li>$$$</li>
-							<li>Get 'er done</li>
-							<li>something else whoops</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<section data-transition="slide" data-background-transition="zoom"
-						style="text-align: left;transition:none ">
-						<h1>
-							Useful
-						</h1>
-						use,ful <b> adj.</b>
-						<p> able to be used for a practical purpose
-							and in
-							several ways.</p>
-					</section>
-
-					<section data-transition="slide" data-background-transition="zoom" class="fade-dark"
-						style="text-align: left;transition:none ">
-						<h1>
-							Useful
-						</h1>
-						use,ful <b> adj.</b>
-						<p> able to be used for a practical purpose
-							and <span class="emphasize">
-								in
-								several ways.
-							</span></p>
-					</section>
-					<section>
-						<h1>Example</h1>
-						<img data-src="images/Octocat.png" />
-					</section>
-				</section>
-
-				<section data-background-transition="zoom">zoom?
-				</section>
-				<section>
-					<h1>h1</h1>
-					<h2>h2</h2>
-					<h3>h3</h3>
-					<h4>h4</h4>
-					<h5>h5</h5>
-				</section>
-				<section>
-					<h2>Code</h2>
-					<div class="fragment fade-up code-row">
-						<div class="left-block">
-							<p style="text-align: right;">
-								In the window's JS one must register the service worker
-							</p>
-						</div>
-						<div class="right-block">
-							<pre>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            class="fade-dark"
+            style="text-align: left;transition:none "
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>
+              able to be used for a practical purpose and
+              <span class="emphasize">
+                in several ways.
+              </span>
+            </p>
+          </section>
+          <section>
+            <h1>Example</h1>
+            <img data-src="images/Octocat.png" />
+          </section>
+        </section>
+        <section>
+          <img src="" />
+        </section>
+        <!-- Meat -->
+        <section data-background-color="#fa6756" class="section-header">
+          <h1>Serverless</h1>
+        </section>
+        <section>
+          <h2>Code</h2>
+          <div class="fragment fade-up code-row">
+            <div class="left-block">
+              <p style="text-align: right;">
+                In the window's JS one must register the service worker
+              </p>
+            </div>
+            <div class="right-block">
+              <pre>
+								<code class="javascript" data-trim contenteditable style="font-size: 1em;" >
+									navigator.serviceWorker.register('sw.js', 
+									{ scope: '/path-to-control' })
+								</code>
+							</pre>
+            </div>
+          </div>
+          <div class="fragment fade-up code-row">
+            <div class="left-block">
+              <p style="text-align: right;">
+                One example eventListener
+              </p>
+            </div>
+            <div class="right-block">
+              <pre>
+										                  <code class="javascript" data-trim contenteditable style="font-size: 1em;" >
+						self.addEventListener('install', function (event) { 
+						 event.waitUntil(preSWWork()) 
+										                    })
+										                  </code>
+										                </pre>
+            </div>
+          </div>
+        </section>
+        <section data-background-transition="zoom">zoom?</section>
+        <section>
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+        </section>
+        <section>
+          <h2>Code</h2>
+          <div class="fragment fade-up code-row">
+            <div class="left-block">
+              <p style="text-align: right;">
+                In the window's JS one must register the service worker
+              </p>
+            </div>
+            <div class="right-block">
+              <pre>
 				                  <code class="javascript" data-trim contenteditable style="font-size: 1em;" >
 navigator.serviceWorker.register('sw.js', 
  { scope: '/path-to-control' })
 				                  </code>
 				                </pre>
-						</div>
-					</div>
-					<div class="fragment fade-up code-row">
-						<div class="left-block">
-							<p style="text-align: right;">
-								One example eventListener
-							</p>
-						</div>
-						<div class="right-block">
-							<pre>
+            </div>
+          </div>
+          <div class="fragment fade-up code-row">
+            <div class="left-block">
+              <p style="text-align: right;">
+                One example eventListener
+              </p>
+            </div>
+            <div class="right-block">
+              <pre>
 				                  <code class="javascript" data-trim contenteditable style="font-size: 1em;" >
 self.addEventListener('install', function (event) { 
  event.waitUntil(preSWWork()) 
 				                    })
 				                  </code>
 				                </pre>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-
-
-	</body>
-
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
