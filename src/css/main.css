@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
 /*********************************************
  * Colors
  *********************************************/
@@ -15,6 +17,17 @@
   --bright-color: #a3d1c2;
   --light1-color: #f7e0a6; */
 }
+::selection {
+  color: #fff;
+  background: var(--emphasis-color);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: var(--emphasis-color);
+  text-shadow: none;
+}
 /*********************************************
  * Text
  *********************************************/
@@ -25,9 +38,18 @@
   font-weight: 900;
   /* color:https://www.colourlovers.com/color/DB593F/ */
 }
+.reveal .quote h1,
+.reveal .quote h2,
+.reveal .quote h3,
+.reveal .quote {
+  /* set font to cursivey */
+  font-family: 'Lora', serif;
+  text-transform: inherit;
+}
 .reveal .fade-dark,
 .reveal .fade-dark h1,
-.reveal .fade-dark p {
+.reveal .fade-dark p,
+.reveal .fade-dark {
   color: var(--dark-lighten-color);
 }
 .less-emphasis {
@@ -52,7 +74,19 @@
 .reveal .section-header h1,
 .reveal .section-header h2,
 .reveal .section-header h3,
-.reveal .section-header p {
+.reveal .section-header p,
+.reveal .section-header {
   background-color: var(--emphasis-color);
   color: var(--light-orig-color);
+}
+
+/* .flex-box-container {
+  display: flex;
+} */
+
+img,
+video,
+iframe {
+  height: 65vh;
+  max-width: 80vw;
 }

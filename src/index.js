@@ -3,6 +3,8 @@ const Reveal = require('reveal.js')
 require('reveal.js/css/reveal.css')
 require('reveal.js/css/theme/solarized.css')
 require('reveal.js/lib/css/zenburn.css')
+require('./css/main.css')
+require('./css/code.css')
 
 Reveal.initialize({
   controls: true,

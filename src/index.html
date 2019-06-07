@@ -6,8 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/css/code.css" />
     <title>Serverless Usecases</title>
     <meta name="description" content="Dev life using Serverless a talk for Serverlessday Milano" />
     <meta name="author" content="Vicrtoria Bernard" />
@@ -17,31 +15,86 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
-          <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-        </section>
         <section data-background-color="#fa6756" class="section-header">
           <h1>Dev life using Serverless</h1>
           <h3>Victoria Bernard</h3>
           <h3>June 21, 2019</h3>
         </section>
         <section>
-          <img src="images/twins.gif" sizes="500px" />
-          <div>
-            <h1 class="emphasize">Love</h1>
-          </div>
+          <h2>Who am I?</h2>
+          <div class="fragment fade-up code-row">Engineer</div>
+          <img src="images/me_baby.jpg" />
+          <div class="fragment fade-up code-row">Fat baby</div>
         </section>
-        <section data-background="images/tools.jpg" style="text-align: right; justify-items: end">
-          <div
-            style="background-color:rgba(255, 255, 255, 0.6); padding: 20px; display: inline-block"
-          >
-            <h1>Tools</h1>
-          </div>
+        <section>
+          <!-- Creative Commons Licence (by-nc-nd). See worditout.com for details -->
+          <!-- https://worditout.com/word-cloud/3814509/private/663e0079e8ae59d8ddac7737c9dd10a8 -->
+          <img class="plain" src="/src/images/Cloud.png" />
         </section>
+        <section>
+          <section>
+            <h2>
+              What makes developers happy?
+            </h2>
+            <ul>
+              <li>
+                Speed?
+              </li>
+              <li>Money?</li>
+              <li>Global?</li>
+              <li>Cool factor?</li>
+            </ul>
+          </section>
+          <section>
+            <h1>
+              Clouds Compete
+            </h1>
+            <img class="" src="/src/images/cloud_fight.jpg" />
+          </section>
+          <section>
+            <h1>Lazy</h1>
+            <img class="plain" src="/src/images/lazy-office-worker.png" />
+          </section>
+          <section>
+            <h1>
+              Truth
+            </h1>
+            <img class="" src="/src/images/coffee_not_lazy.jpg" />
+          </section>
+          <section data-background-color="#fa6756" class="section-header">
+            <span class="quote"
+              >"Quote to replace that means - Tools are what help developers."</span
+            >
+          </section>
+          <section>
+            <img src="images/twins.gif" sizes="500px" />
+            <div>
+              <h1 class="emphasize">Love</h1>
+            </div>
+          </section>
+        </section>
+
+        <section style="text-align: left">
+          <h2>
+            Agenda
+          </h2>
+          <ul>
+            <li>What it means to be useful</li>
+            <li>Example of long-lived tools</li>
+            <li>Example of how serverless</li>
+          </ul>
+        </section>
+        <section>
+          <section data-background="images/tools.jpg" style="text-align: right; justify-items: end">
+            <div
+              style="background-color:rgba(255, 255, 255, 0.6); padding: 20px; display: inline-block"
+            >
+              <h1>Tools</h1>
+            </div>
+          </section>
+          <section data-background="images/qtip.jpg"></section>
+        </section>
+
         <section>
           <section
             data-transition="slide"
@@ -106,7 +159,6 @@
               <li>Fast</li>
               <li>$$$</li>
               <li>Get 'er done</li>
-              <li>something else whoops</li>
             </ul>
           </section>
           <section>
@@ -119,7 +171,6 @@
               <li><span class="emphasize">Fast</span></li>
               <li>$$$</li>
               <li>Get 'er done</li>
-              <li>something else whoops</li>
             </ul>
           </section>
           <section>
@@ -136,7 +187,6 @@
               <li>Fast</li>
               <li><span class="emphasize">$$$</span></li>
               <li>Get 'er done</li>
-              <li>something else whoops</li>
             </ul>
           </section>
           <section>
@@ -150,7 +200,6 @@
               <li>Fast</li>
               <li>$$$</li>
               <li>Get 'er done</li>
-              <li><span class="emphasize">something else whoops</span></li>
             </ul>
           </section>
           <section>
@@ -164,7 +213,6 @@
               <li>Fast</li>
               <li>$$$</li>
               <li>Get 'er done</li>
-              <li>something else whoops</li>
             </ul>
           </section>
         </section>
@@ -199,17 +247,69 @@
               </span>
             </p>
           </section>
-          <section>
-            <h1>Example</h1>
-            <img data-src="images/Octocat.png" />
-          </section>
+        </section>
+        <section data-background-color="#fa6756" class="section-header">
+          <span class="quote">"Hallmark of good software outlives its initial use case".</span>
         </section>
         <section>
-          <img src="" />
+          <section data-background-color="#fa6756" class="section-header">
+            <h1>Example</h1>
+          </section>
+          <section>
+            <h1>Github</h1>
+            <img src="images/Octocat.png" />
+          </section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+          >
+            <h1>
+              Github
+            </h1>
+            <ul>
+              <li>Version Control platform for CLI</li>
+              <li class="emphasize">Pages</li>
+              <li>Social</li>
+            </ul>
+          </section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+          >
+            <h1>
+              Github
+            </h1>
+            <ul>
+              <li>Version Control platform for CLI</li>
+              <li>Pages</li>
+              <li class="emphasize">Social</li>
+            </ul>
+          </section>
+          <section
+            data-transition="slide"
+            data-background-transition="zoom"
+            style="text-align: left;transition:none "
+            class="fade-dark"
+          >
+            <h1>
+              Useful
+            </h1>
+            use,ful <b> adj.</b>
+            <p>
+              able to be used for a <span class="emphasize">practical </span>purpose and in several
+              ways.
+            </p>
+          </section>
         </section>
         <!-- Meat -->
         <section data-background-color="#fa6756" class="section-header">
           <h1>Serverless</h1>
+        </section>
+
+        <section data-background-color="#fa6756" class="section-header">
+          <h1>Hacks</h1>
         </section>
         <section>
           <h2>Code</h2>
