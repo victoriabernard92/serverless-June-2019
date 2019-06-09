@@ -52,6 +52,14 @@
 .reveal .fade-dark {
   color: var(--dark-lighten-color);
 }
+.reveal .white-text-img h1,
+.reveal .white-text-img h2,
+.reveal .white-text-img h3,
+.reveal .white-text-img h4,
+.reveal .white-text-img h5,
+.reveal .white-text-img {
+  color: white;
+}
 .less-emphasis {
   color: #268bd2;
 }
