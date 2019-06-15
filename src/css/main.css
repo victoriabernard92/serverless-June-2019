@@ -95,6 +95,6 @@
 img,
 video,
 iframe {
-  height: 65vh;
-  max-width: 80vw;
+  /* height: 65vh;
+  max-width: 80vw; */
 }
