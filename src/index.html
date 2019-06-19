@@ -155,9 +155,9 @@
         <section>
           <h1>Practical</h1>
           <ul>
-            <li>Cheap</li>
-            <li>Accessible</li>
-            <li>Easy to use</li>
+            <li >Cheap<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
+            <li>Accessible<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
+            <li>Easy to use<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
           </ul>
         </section>
         <section
@@ -175,20 +175,14 @@
             <span class="emphasize">in several ways.</span>
           </p>
         </section>
-        <section>
-          <h1>Clean ears</h1>
+        <section class="photo-slide">
+          <h5>Clean ears</h5>
           <img src="images/qtip_clean.gif" />
-        </section>
-        <section>
-          <h1>Medicine</h1>
+          <h5>Medicine</h5>
           <img src="images/qtip_boy.jpg" />
-        </section>
-        <section>
-          <h1>Makeup</h1>
+          <h5>Door Picking</h5>
+          <h5>Makeup</h5>
           <img src="images/makeup_qtip.jpg" />
-        </section>
-        <section>
-          <h1>Door Picking</h1>
         </section>
         <section data-background-color="#fa6756" class="section-header">
           <span class="quote">Qtips are very useful.</span>
@@ -226,9 +220,9 @@
         <section>
           <h1>Practical</h1>
           <ul>
-            <li>Free</li>
-            <li>Reliable</li>
-            <li>uses <code class="javascript emphasize">git</code></li>
+            <li>Free<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
+            <li>Reliable<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
+            <li>uses <code class="javascript emphasize">git</code><img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
           </ul>
         </section>
         <section data-transition="slide" data-background-transition="zoom" style=" ">
@@ -254,12 +248,58 @@
         <section data-background-color="#fa6756" class="section-header">
           <h1>Looking at Serverless</h1>
         </section>
+        <section
+        data-transition="slide"
+        data-background-transition="zoom"
+        style="text-align: left;transition:none "
+      >
+        <h1>
+          Serverless
+        </h1>
+        /ˈsəːvələs/<b> adj.</b>
+        <p>
+          <!-- Not involving a server; composed only of clients. -->
+          Compute without having to think about machine resource allocation.
+          <!-- scaling code. -->
+          <!-- cloud-computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources. -->
+        </p>
+      </section>
+      <section
+      data-transition="slide"
+      data-background-transition="zoom"
+      style="text-align: left;transition:none "
+    >
+      <h1>
+        Useful
+      </h1>
+      /ˈyo͞osfəl/<b> adj.</b>
+      <p>
+        able to be used for a practical purpose and in several
+        ways.
+      </p>
+    </section>
+      <section
+      data-transition="slide"
+      data-background-transition="zoom"
+      style="text-align: left;transition:none "
+      class="fade-dark"
+    >
+      <h1>
+        Useful
+      </h1>
+      /ˈyo͞osfəl/<b> adj.</b>
+      <p>
+        able to be used for a <span class="emphasize">practical </span>purpose and in several
+        ways.
+      </p>
+    </section>
         <section>
           <h1>Practical</h1>
           <ul>
-            <li>Fast?</li>
-            <li>$$$</li>
-            <li>Tasks completed</li>
+            <li>Anywhere<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
+            <li>Anytime<img class="checkmark plain fragment fade-up" src="images/checkmark.svg"/></li>
+            <li>Reasonable Price<img class="checkmark plain fragment fade-up" src="images/questionmark.svg"/></li>
+            <li>Fast<img class="checkmark plain fragment fade-up" src="images/questionmark.svg"/></li>
           </ul>
         </section>
         <section>
@@ -271,13 +311,14 @@
           </video>
         </section>
         <section>
-          <h1>Practical</h1>
-          <ul>
-            <li>Fast, for some</li>
-            <li>$$$</li>
-            <li>Tasks completed</li>
-          </ul>
-        </section>
+            <h1>Practical</h1>
+            <ul>
+              <li>Anywhere<img class="checkmark plain" src="images/checkmark.svg"/></li>
+              <li>Anytime<img class="checkmark plain" src="images/checkmark.svg"/></li>
+              <li>Reasonable Price (...for some) <img class="checkmark plain" src="images/checkmark.svg"/></li>
+              <li>Fast (...for some)<img class="checkmark plain" src="images/checkmark.svg"/></li>
+            </ul>
+          </section>
         <section>
           <h1>Boss On Board</h1>
           <img src="images/boss.gif" />
@@ -291,13 +332,19 @@
         </section>
         <section>
           <h2>Browsers aren't cool</h2>
+          <img src="images/cors.png"/>
         </section>
         <section>
           <h2>Cors</h2>
           <img src="images/CORs issue.png" />
         </section>
         <section>
-          <h2>Cors Solution</h2>
+          <h2>Traditional Solution</h2>
+          <span>Fix <code>api.com</code></span>
+          <pre><code>crazy nginx code</code></pre>
+        </section>
+        <section>
+          <h2>Serverless Solution</h2>
           <img src="images/CORs solution.png" />
         </section>
         <section>
@@ -373,6 +420,7 @@ async function handleRequest(request) {
             Serverless fixes little but annoying and tedious problems while developing.
           </span>
         </section>
+        <section><h2>Try it out</h2><img class="plain"src="images/workerpreview.png"/></section>
         <!-- <section>
           <h2></h2>
           <img src="images/sansa.png" />
