@@ -116,3 +116,9 @@ iframe {
   border: 0;
   box-shadow: none;
 }
+
+.present {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
