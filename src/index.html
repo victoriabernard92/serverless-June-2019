@@ -23,13 +23,14 @@
         <section>
           <h2>Who am I?</h2>
           <div>
-            <ul>
+            <ul style="float: left">
               <li class="fragment fade-up">Engineer</li>
-              <li class="fragment fade-up">
-                <span>Fat baby</span>
-                <img src="images/me_baby.jpg" />
-              </li>
+              <li class="fragment fade-up">Fat baby</li>
             </ul>
+            <img
+              class="fragment fade-up"
+              src="images/me_baby.jpg"
+              style="position: absolute; bottom: 32px; right: 0; width: 50%" />
           </div>
         </section>
         <section data-background="images/tools.jpg" style="text-align: right; justify-items: end">
@@ -92,7 +93,7 @@
           <span class="quote">Developers fall in love when enabled to create.</span>
         </section>
         <section>
-          <img src="images/twins.gif" sizes="500px" />
+          <img src="images/twins.gif" style="height: 70%" />
           <div>
             <span class="quote">“The things I do for love.”</span>
           </div>
@@ -192,14 +193,20 @@
             <span class="emphasize">in several ways.</span>
           </p>
         </section>
-        <section class="photo-slide">
-          <h5>Clean ears</h5>
-          <img src="images/qtip_clean.gif" />
-          <h5>Medicine</h5>
-          <img src="images/qtip_boy.jpg" />
-          <h5>Door Picking</h5>
-          <h5>Makeup</h5>
-          <img src="images/makeup_qtip.jpg" />
+        <section>
+          <div style="display: flex; height: 100%">
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+              <h5>Clean ears</h5>
+              <h5>Medicine</h5>
+              <h5>Door Picking</h5>
+              <h5>Makeup</h5>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+              <img style="height: 30%; width: auto" src="images/qtip_clean.gif" />
+              <img style="height: 30%; width: auto" src="images/qtip_boy.jpg" />
+              <img style="height: 30%; width: auto" src="images/makeup_qtip.jpg" />
+            </div>
+          </div>
         </section>
         <section data-background-color="#fa6756" class="section-header">
           <span class="quote">Qtips are very useful.</span>
@@ -208,8 +215,8 @@
           <h1>Developer Tool Example</h1>
         </section>
         <section>
-          <h1>Github</h1>
-          <img src="images/Octocat.png" />
+          <h1 style="height: 24%">Github</h1>
+          <img style="height: 75%; margin: 0" src="images/Octocat.png" />
         </section>
         <section data-background-color="#fa6756" class="section-header">
           <span class="quote">
@@ -335,10 +342,10 @@
           </ul>
         </section>
         <section>
-          <h1>
+          <h1 style="height: 25%">
             Cold Starts
           </h1>
-          <video autoplay="true" loop="true">
+          <video autoplay="true" loop="true" style="height: 70%">
             <source src="images/coolstartsslowshits.mp4" type="video/mp4" />
           </video>
         </section>
@@ -355,8 +362,8 @@
           </ul>
         </section>
         <section>
-          <h1>Boss On Board</h1>
-          <img src="images/boss.gif" />
+          <h1 style="height: 25%">Boss On Board</h1>
+          <img style="height: 70%" src="images/boss.gif" />
         </section>
         <!-- <section data-background-color="#fa6756" class="section-header">
           <span class="quote">""</span>
@@ -534,16 +541,16 @@ async function handleRequest(request) {
           </span>
         </section>
         <section>
-          <h2>Try it out</h2>
-          <img class="plain" src="images/workerpreview.png" />
+          <h2 style="height: 20%">Try it out</h2>
+          <img style="height: 80%; margin: 0;" class="plain" src="images/workerpreview.png" />
         </section>
         <!-- <section>
           <h2></h2>
           <img src="images/sansa.png" />
         </section> -->
         <section>
-          <h2>Cersei is Cool</h2>
-          <img src="images/cersei.jpg" />
+          <h2 style="height: 15%">Cersei is Cool</h2>
+          <img style="height: 80%; margin: 0;" src="images/cersei.jpg" />
         </section>
       </div>
     </div>
