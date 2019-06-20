@@ -3,11 +3,13 @@
 *.iws
 *.eml
 out/
+dist/*
 .DS_Store
 .svn
 log/*.log
 tmp/**
-node_modules/
+node_modules/*
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
+node_modules
