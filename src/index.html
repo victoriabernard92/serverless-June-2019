@@ -339,9 +339,75 @@
           <img src="images/CORs issue.png" />
         </section>
         <section>
-          <h2>Traditional Solution</h2>
-          <span>Fix <code>api.com</code></span>
-          <pre><code>crazy nginx code</code></pre>
+          <h2>Traditional Solutions</h2>
+          <span>Fix <code>example.com</code></span>
+          <pre><code> server {
+            listen         80 default_server;
+            listen         [::]:80 default_server;
+            listen     443;
+        
+            server_name    slides.*;
+        
+            ssl        on;
+            ssl_certificate       /usr/local/share/ca-cert/cert.pem;
+            ssl_certificate_key     /usr/local/share/ca-cert/private.pem;
+        
+            client_max_body_size 5000M;
+        
+            root           /var/www/slides;
+            index          index.html;
+        
+            location /favicon.ico{
+                alias /var/www/victoriabernard.com/src/2016/04/Victoria_logo_gear.png;
+            }
+            location /serverless {
+                root /var/www/slides/workers-slides-1002;
+                index          index.html;
+          
+                if ($request_method = 'OPTIONS') {
+                  add_header 'Access-Control-Allow-Origin' '*';
+                  add_header 'Access-Control-Allow-Credentials' 'true';
+                  add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+                  add_header 'Access-Control-Allow-Headers' 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+                  add_header 'Access-Control-Max-Age' 1728000;
+                  add_header 'Content-Type' 'text/plain charset=UTF-8';
+                  add_header 'Content-Length' 0;
+                  return 204;
+              }
+
+                if ($request_method = 'POST') {
+                    add_header 'Access-Control-Allow-Origin' '*';
+                    add_header 'Access-Control-Allow-Credentials' 'true';
+                    add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+                    add_header 'Access-Control-Allow-Headers' 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+
+                }
+
+                if ($request_method = 'GET') {
+
+                    add_header 'Access-Control-Allow-Origin' '*';
+                    add_header 'Access-Control-Allow-Credentials' 'true';
+                    add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+                    add_header 'Access-Control-Allow-Headers' 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+
+                }
+              }
+              location /05-17-2018 {
+                  root /var/www/slides/workers-slides-0517;
+                  try_files $uri $uri/ /index.html;
+                  if ($request_method = 'GET') {....
+
+              }
+              location /10-02-2018 {
+                if ($request_method = 'GET') {...
+          
+                          
+              ...
+            
+            }
+          }
+        }</code></pre>
+          <div>Now do this for everything location block...</div>
         </section>
         <section>
           <h2>Serverless Solution</h2>
